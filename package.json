@@ -1,0 +1,22 @@
+{
+  "name": "js-playground",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tdeschryver/js-playground.git"
+  },
+  "author": "tdeschryver",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tdeschryver/js-playground/issues"
+  },
+  "homepage": "https://github.com/tdeschryver/js-playground#readme",
+  "devDependencies": {
+    "ava": "^0.19.1"
+  }
+}
