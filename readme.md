@@ -1,2 +1,3 @@
-[![Build Status](https://travis-ci.org/tdeschryver/js-playground.svg?branch=master)](https://travis-ci.org/tdeschryver/js-playground)
-[![Build status](https://ci.appveyor.com/api/projects/status/tqv9xw43t8qbl9hw/branch/master?svg=true)](https://ci.appveyor.com/project/tdeschryver/js-playground/branch/master)
+[![Build Status TravisCI](https://travis-ci.org/tdeschryver/js-playground.svg?branch=master)](https://travis-ci.org/tdeschryver/js-playground)
+[![Build status AppVeyor](https://ci.appveyor.com/api/projects/status/tqv9xw43t8qbl9hw/branch/master?svg=true)](https://ci.appveyor.com/project/tdeschryver/js-playground/branch/master)
+[![Build status CircleCI](https://circleci.com/gh/tdeschryver/js-playground.svg?style=shield)](https://circleci.com/gh/tdeschryver/js-playground)
