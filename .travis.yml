@@ -9,5 +9,8 @@ node_js:
   - '6'
 
 script:
-  - node --version
   - npm test
+
+after_success:
+  - npm install codecov
+  - codecov
