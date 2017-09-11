@@ -17,6 +17,17 @@
   },
   "homepage": "https://github.com/tdeschryver/js-playground#readme",
   "devDependencies": {
-    "ava": "^0.19.1"
+    "ava": "^0.19.1",
+    "babel-preset-latest": "^6.24.1",
+    "babel-register": "^6.26.0"
+  },
+  "ava": {
+    "babel": "inherit",
+    "require": [
+      "babel-register"
+    ]
+  },
+  "babel": {
+    "presets": ["latest"]
   }
 }
