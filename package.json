@@ -31,6 +31,11 @@
     ],
     "require": [
       "babel-register"
+    ],
+    "reporter": [
+      "lcov",
+      "text",
+      "html"
     ]
   },
   "babel": {
