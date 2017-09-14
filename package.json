@@ -21,7 +21,11 @@
     "babel-preset-latest": "^6.24.1",
     "babel-register": "^6.26.0",
     "coveralls": "^2.13.1",
+    "eslint": "^4.6.1",
+    "eslint-config-prettier": "^2.4.0",
+    "eslint-plugin-prettier": "^2.2.0",
     "nyc": "^11.2.1",
+    "prettier": "^1.6.1",
     "tap-nyc": "^1.0.3",
     "tape": "^4.8.0"
   },
