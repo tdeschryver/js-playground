@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/tdeschryver/js-playground#readme",
   "devDependencies": {
-    "babel-preset-latest": "^6.24.1",
+    "babel-preset-env": "^1.6.0",
     "babel-register": "^6.26.0",
     "coveralls": "^2.13.1",
     "eslint": "^4.6.1",
@@ -42,6 +42,6 @@
     "reporter": ["lcov", "text", "html"]
   },
   "babel": {
-    "presets": ["latest"]
+    "presets": ["env"]
   }
 }
