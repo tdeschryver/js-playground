@@ -10,6 +10,8 @@ rm -rf ./tmp/gh-pages
 mkdir -p ./tmp
 mkdir -p ./tmp/gh-pages
 
+npm run test
+
 echo This is a test $(date) > foo.txt
 cp ./foo.txt ./tmp
 

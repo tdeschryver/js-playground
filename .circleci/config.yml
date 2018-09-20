@@ -28,6 +28,8 @@ jobs:
       - image: circleci/node:8.0
     steps:
       - checkout
+      - restore_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
       - run:
           name: deploy-gh-pages
           command: bash ./scripts/build.sh
