@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+echo BEGIN
+
+
 # Exit script if you try to use an uninitialized variable.
 set -o nounset
 
