@@ -22,8 +22,8 @@ cd ./tmp/gh-pages
 
 git init
 
-git config --global user.email "$GH_EMAIL" > /dev/null 2>&1
-git config --global user.name "$GH_NAME" > /dev/null 2>&1
+git config --global user.email "${GH_EMAIL}" > /dev/null 2>&1
+git config --global user.name "${GH_NAME}" > /dev/null 2>&1
 git remote add origin https://${GH_PAGES_TOKEN}@github.com/${GH_PAGES_REF} 2>&1
 
 git fetch 

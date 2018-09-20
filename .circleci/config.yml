@@ -30,7 +30,7 @@ jobs:
       - checkout
       - run:
           name: deploy-gh-pages
-          command: chmod 744 ./scripts/build.sh
+          command: chmod 744 ./scripts/buildss.sh
 
 workflows:
   version: 2
