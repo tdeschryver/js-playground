@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 set -e
 
@@ -8,21 +8,28 @@ rm -rf ./tmp/gh-pages
 mkdir -p ./tmp
 mkdir -p ./tmp/gh-pages
 
-echo 'This is a test' > foo.txt
-cp ./foo.txt ./tmp/gh-pages
+echo This is a test $(date) > foo.txt
+cp ./foo.txt ./tmp
 
-git checkout gh-pages
 cd ./tmp/gh-pages
 
+git init
 
 git config --global user.email "$GH_EMAIL" > /dev/null 2>&1
 git config --global user.name "$GH_NAME" > /dev/null 2>&1
-git init
-git remote add origin "$remote"
+git remote add origin https://${GH_PAGES_TOKEN}@github.com/${GH_PAGES_REF} 2>&1
 
-git add -A
+git fetch 
+git checkout gh-pages
+
+# clean the repo
+git rm -rf .
+git clean -fxd
+
+cp ../foo.txt ./
+
+git add .
 git commit -m "Automated deploy to GitHub pages"
-git push --force --quiet "https://${GH_PAGES_TOKEN}@${GH_PAGES_REF}" origin gh-pages > /dev/null 2>&1
-
+git push --force --quiet origin gh-pages 2>&1
 
 echo Deploy to GitHub Pages - Finished
