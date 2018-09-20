@@ -1,15 +1,7 @@
 #!/usr/bin/env bash
 
-echo BEGIN
-
-
-# Exit script if you try to use an uninitialized variable.
 set -o nounset
-
-# Exit script if a statement returns a non-true return value.
 set -o errexit
-
-# Use the error status of the first failure, rather than that of the last item in a pipeline.
 set -o pipefail
 
 echo Deploy to GitHub Pages - Start
@@ -32,7 +24,6 @@ git remote add origin https://${GH_PAGES_TOKEN}@github.com/${GH_PAGES_REF} 2>&1
 git fetch 
 git checkout gh-pages
 
-# clean the repo
 git rm -rf .
 git clean -fxd
 
